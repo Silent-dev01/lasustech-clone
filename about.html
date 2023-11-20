@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WWW.LASUSTECH.COM</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="pre   connect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"> -->
+<script src="https://use.fontawesome.com/c3bc8e3d89.js"></script>
+</head>
+<body>
+   <section class="sub-header">
+<nav>
+   <a href="index.html"><img src="LOGO.PNG" class="logo"></a>
+   <div class="nav-links" id="navlinks">
+      <i class="fa fa-times" onclick="hidemenu()"></i>
+      <ul>
+
+         <li><a style="color:#fff ;" href="index.html">HOME</a></li>
+         <li><a  style="color:#fff ;"href="about.html">ABOUT</a></li>
+         <li><a style="color:#fff ;" href="Course.html">COURSE</a></li>
+         <li><a style="color:#fff ;" href="Blog.html">BLOG</a></li>
+         <li><a style="color:#fff ;" href="Contact.html">CONTACT</a></li>
+      </ul>
+       </div>
+       <i class="fa fa-bars" onclick="showmenu()"></i>
+</nav>
+   </section>
+
+
+   <!------- about us content ------>
+
+   <section class="about us">
+      
+    <div class="row">
+        <div class="about-col">
+
+            <h1>The biggest university in Lagos State.</h1>
+            <p>Lagos State University of Science and Technology is a government-owned 
+               tertiary institution located in Ikorodu, Lagos State, Nigeria. The institution
+                was formerly known as Lagos State College of Science and Technology (LACOSTECH)
+                 and later changed to Lagos State Polytechnic (LASPOTECH).</p>
+                 <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col"></div>
+        <img src="makaaaa.jpeg">
+        
+    </div>
+    <div class="">
+
+    </div>
+
+
+   </section>
+
+
+<!------- footer ------->
+<section class="footer">
+   <h4>ABOUT US</h4>
+   <p>Lagos State University of Science and Technology is a government-owned tertiary <br> institution located in Ikorodu, Lagos State, Nigeria.
+      The institution was formerly known as <br> State College of Science and Technology (LACOSTECH) and later changed to Lagos State Polytechnic (LASPOTECH).</p>
+       <div class="icons">
+         <i class="fa fa-facebook"></i>
+         <i class="fa fa-twitter"></i>
+         <i class="fa fa-instagram"></i>
+         <i class="fa fa-linkedin"></i>
+       </div>
+</section>
+
+
+
+
+
+   <!-------javascript for toggle menu------->
+   <script>
+      var navlinks=document.getElementById("navlinks");
+
+        function showmenu(){
+         navlinks.style.right="0";
+        }
+        function hidemenu(){
+         navlinks.style.right="-200px";
+        }
+
+
+      
+   </script>
+</body>
+
+</html>

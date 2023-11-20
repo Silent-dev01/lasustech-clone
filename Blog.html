@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WWW.LASUSTECH.COM</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="pre   connect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css"> -->
+<script src="https://use.fontawesome.com/c3bc8e3d89.js"></script>
+</head>
+<body>
+   <section class="sub-header">
+<nav>
+   <a href="index.html"><img src="LOGO.PNG" class="logo"></a>
+   <div class="nav-links" id="navlinks">
+      <i class="fa fa-times" onclick="hidemenu()"></i>
+      <ul>
+
+        <li><a style="color:#fff ;" href="index.html">HOME</a></li>
+        <li><a  style="color:#fff ;"href="about.html">ABOUT</a></li>
+        <li><a style="color:#fff ;" href="Course.html">COURSE</a></li>
+        <li><a style="color:#fff ;" href="Blog.html">BLOG</a></li>
+        <li><a style="color:#fff ;" href="Contact.html">CONTACT</a></li>
+      </ul>
+       </div>
+       <i class="fa fa-bars" onclick="showmenu()"></i>
+</nav>
+   </section>
+
+
+   <!---------- blog page content ------>
+<section class="blog content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="graduation.jpg">
+            <h1>our certificate and programmes for 2023</h1>
+            <h2>OND</h2>
+            <p>OND or ND is a Polytechnic award for a two-year course. This stands 
+                for Ordinary National Diploma,which is also a vacational undergraduate
+                qualification that takes two years to to complete. it is awarded in field 
+                such as engineering, business and computing. <br>Holder of ND can be employed or be offered admission into Higher National
+                Diploma (HND) and where through Direct entry admission, can be admitted 
+                to the 200 level course in a university.</p>
+                
+                 <br>
+                 <h2>HND</h2>
+                 <p>HND stands for Higher National Diploma, which is a vocational undergraduate
+                    qualification that takes two to three years to complete. it is awarded in field 
+                    such as engineering, business and computing in Nigeria, HND holder can either proceed to
+                    postgraduate degree or continue with their professional careers. In between the ND and HND, there is always the need 
+                    for a 1 or 2 year industrial training(IT). which is prerequisite for Higher National Diploma admission.
+                 </p>
+                     <br>
+                     <h2>BSC</h2>
+                     <p>In full, BSC is a Bachelor of science. This term is used for a degree or university award. You earn BSC after
+                        completing a 4-year or 5-year course in any university. It is typically awarded in fields of study such as 
+                        mathematics, natural sciences and social sciences. <br>
+                        Moreso, terms like B.Tech and BSC(Ed) are equivalent to BSC. They are also degree awards- just a difference in courses or discipline.
+                        While B.Tech is for graduates of engineering and technology-related courses, BSC(Ed) or B.Ed is for graduate of education courses.
+                     </p>
+ 
+                             <div class="comment-box">
+                             <h3>leave a comment </h3>
+                             <form class="comment-form">
+                                <input type="text" placeholder="Enter name">
+                                <input type="email" placeholder="Enter email">
+                                <textarea rows="5" placeholder="your comment">
+                                </textarea>
+                                <button type="submit" class="hero-btn red-btn">Post comment</button>
+
+
+                             </form>
+                             </div>
+
+       </div>
+        <div class="blog-right">
+            <h3>post categories</h3>
+            <div>
+                <span>business analytics</span>
+                <span>21</span>  
+            </div>
+            <div>
+                <span>data science </span>
+                <span>28</span>  
+            </div>
+            <div>
+                <span>machine learning</span>
+                <span>15</span>  
+            </div>
+            <div>
+                <span>computer science</span>
+                <span>34</span>  
+            </div>
+            <div>
+                <span>auto cad</span>
+                <span>30</span>  
+            </div>
+            <div>
+                <span>journalism</span>
+                <span>22</span>  
+            </div>
+            <div>
+                <span>commerce</span>
+                <span>30</span>  
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+   <!-------javascript for toggle menu------->
+   <script>
+      var navlinks=document.getElementById("navlinks");
+
+        function showmenu(){
+         navlinks.style.right="0";
+        }
+        function hidemenu(){
+         navlinks.style.right="-200px";
+        }
+
+
+      
+   </script>
+</body>
+
+</html>
