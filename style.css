@@ -101,7 +101,28 @@ h1{
     font-size: 36px;
     font-weight: 600;
 }
-p{
+.course-col p{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.MISSION-col p{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.VISION-col p{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.campus p{
     color: #000000;
     font-size: 14px;
     font-weight: 300;
@@ -126,6 +147,7 @@ p{
 
 }
 h3{
+    color: white;
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
@@ -390,7 +412,7 @@ transition: 0.5s;
     text-align: center;
 }
 .blog-left p{
-    color: #999;
+    color: white;
     padding: 0;
     text-align: center;
         flex-basis: 31%;
