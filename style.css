@@ -7,9 +7,11 @@
     min-height: 100vh;
     width: 100%;
     background-image:url("uni.jpeg");
-
+    backdrop-filter: blur(10px);
+    filter: blur(0.5px);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 
@@ -23,8 +25,22 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-nav img{
-width: 150px;
+
+.header nav img{
+    width: 5%;
+    margin-left: -40px;
+    height: 50px;
+    border-radius: 50px;
+}
+.header nav  a{
+    padding-left: 10px;
+    display: flex;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700; 
+    font-size: 30px;
+    
+    text-transform: uppercase;
 }
 .nav-links{
     flex: 1;
@@ -34,29 +50,48 @@ width: 150px;
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
+
     position: relative;
 }
 .nav-links ul li a{
-    color: #fff;
+    color: #16213E;
     text-decoration: none;
-    font-size: 13px;
+    font-weight: 700;
+    font-size: 15px;
 }
 .nav-links ul li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background: #333;
     display: block;
     margin: auto;
     transition: 0.5s;
 }
 .nav-links ul li:hover::after{
-    width: 100%;
+    width: 40px;
 }
 
 nav.fa{
     display: none;
 
+}
+
+.nav-content{
+    padding-top: 150px;
+    padding-left: 50px;
+}
+.nav-content h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 800;
+    color: #16213E;
+}
+.nav-content p{
+    text-transform: capitalize;
+    color: black;
+    font-weight: 800;
+    font-size: 20px;
 }
 
 @media(max-width: 700px){
@@ -92,21 +127,28 @@ nav.fa{
 /*----- faculty -----*/
 
 .course{
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    margin-top: 100px;
 }
 h1{
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.course-col{
+    text-align: center;
 }
 .course-col p{
     color: white;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 15px;
+    text-transform: lowercase;
+    font-weight: 500;
     line-height: 22px;
-    padding: 10px;
+}
+.row{
+    overflow: hidden;
 }
 .MISSION-col p{
     color: white;
@@ -139,9 +181,9 @@ h1{
     flex-basis: 31%;
     background: #16213E;
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 5%; 
     margin-left: 20px;
-    padding: 20px 12px;
+    padding: 20px 20px;
     box-sizing: border-box;
     transition: 0.5s;
 
@@ -151,7 +193,8 @@ h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
-
+    font-size: 20px;
+text-transform: uppercase;
 }
 .course-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,2);
@@ -230,7 +273,9 @@ h3{
 .facilities-col img{
     width: 100%;
     border-radius: 10px;
-
+}
+.image-design img{
+    height: 225px;
 }
 .facilities-col p{
     padding: 0;
@@ -304,6 +349,15 @@ transition: 0.5s;
     text-align: center;
     padding: 100px 0;
 }
+.cta a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.cta a:hover{
+    text-decoration:underline;
+    color: pur;
+}
 .cta h1{
     color: #fff;
     margin-bottom: 40px;
@@ -346,7 +400,7 @@ transition: 0.5s;
     background-position: center;
     background-position: cover;
     text-align: center;
-    color: #fff;
+    color: #333;
 }
 .about-us{
     width: 80%;
